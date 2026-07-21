@@ -5,21 +5,21 @@
 class Ike < Formula
   desc "k9s-style terminal UI for Datadog — monitors, incidents, SLOs, logs and dashboards with k9s muscle memory"
   homepage "https://github.com/Cesarsk/ike"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Cesarsk/ike/releases/download/v0.3.0/ike_0.3.0_darwin_amd64.tar.gz"
-      sha256 "e448c4005b805997baa5ca6371f8c26578d550f66e47559f109876f820cd4766"
+      url "https://github.com/Cesarsk/ike/releases/download/v0.4.0/ike_0.4.0_darwin_amd64.tar.gz"
+      sha256 "2b7fe2c7c0291b61442e364125a9933f26a69e574a8b39e846a9f7d6f5c92367"
 
       define_method(:install) do
         bin.install "ike"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Cesarsk/ike/releases/download/v0.3.0/ike_0.3.0_darwin_arm64.tar.gz"
-      sha256 "f6b477181130aeb4e539e813db3dc4ff6fc32268ddd6449ba94a0bfe17bf4199"
+      url "https://github.com/Cesarsk/ike/releases/download/v0.4.0/ike_0.4.0_darwin_arm64.tar.gz"
+      sha256 "b7e600b2d4a6ef7ea8419aa2903cc9eabeaef7679bb8bf85378c02fef901a6a6"
 
       define_method(:install) do
         bin.install "ike"
@@ -29,15 +29,15 @@ class Ike < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cesarsk/ike/releases/download/v0.3.0/ike_0.3.0_linux_amd64.tar.gz"
-      sha256 "d9808763ab9dd00be0eca515fdd88108a980c1fab2369df98bcb1db93258f2a7"
+      url "https://github.com/Cesarsk/ike/releases/download/v0.4.0/ike_0.4.0_linux_amd64.tar.gz"
+      sha256 "23706a6b8a06571d3e371f25be80c10536ff1f815ea4c3c722c0f51957e7f849"
       define_method(:install) do
         bin.install "ike"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cesarsk/ike/releases/download/v0.3.0/ike_0.3.0_linux_arm64.tar.gz"
-      sha256 "861d604ec8a0aeb315e000d3098d936d27bdb77d7368d144453e2fdc5c18ea95"
+      url "https://github.com/Cesarsk/ike/releases/download/v0.4.0/ike_0.4.0_linux_arm64.tar.gz"
+      sha256 "1f1f1b5e2aaf9768c27f5392d8b8c0854392c7798dc52ac1d8d53df87e788765"
       define_method(:install) do
         bin.install "ike"
       end
